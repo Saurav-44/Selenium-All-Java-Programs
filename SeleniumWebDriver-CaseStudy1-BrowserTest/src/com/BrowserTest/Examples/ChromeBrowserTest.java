@@ -1,0 +1,109 @@
+package com.BrowserTest.Examples;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+public class ChromeBrowserTest {
+	
+	@Test
+	public void ChromeTest1() {
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://opensource-demo.orangehrmlive.com/");
+		driver.manage().window().maximize();
+		String title = driver.getTitle();
+		System.out.println(title);
+		String URL = driver.getCurrentUrl();
+		System.out.println(URL);
+	}
+	
+	@Test
+	public void ChromeTest2() {
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://demo.opencart.com/");
+		driver.manage().window().maximize();
+		String title = driver.getTitle();
+		System.out.println(title);
+		String URL = driver.getCurrentUrl();
+		System.out.println(URL);
+	}
+	
+	@Test
+	public void ChromeTest3() {
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://www.bing.com");
+		driver.manage().window().maximize();
+		String title = driver.getTitle();
+		System.out.println(title);
+		String URL = driver.getCurrentUrl();
+		System.out.println(URL);
+	}
+	
+	@Test
+	public void ChromeTest4() {
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://www.freecrm.com/");
+		driver.manage().window().maximize();
+		String title = driver.getTitle();
+		System.out.println(title);
+		String URL = driver.getCurrentUrl();
+		System.out.println(URL);
+	}
+	
+	@Test
+	public void ChromeTest5() {
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://www.chase.com/");
+		driver.manage().window().maximize();
+		String title = driver.getTitle();
+		System.out.println(title);
+		String URL = driver.getCurrentUrl();
+		System.out.println(URL);
+	}
+	
+	@Test
+	public void ChromeTest6() {
+		WebDriver driver = new ChromeDriver();
+		driver.get("http://altoro.testfire.net/");
+		driver.manage().window().maximize();
+		String title = driver.getTitle();
+		System.out.println(title);
+		String URL = driver.getCurrentUrl();
+		System.out.println(URL);
+	}
+	
+	@Test
+	public void ChromeTest7() {
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://testautomationpractice.blogspot.com/");
+		driver.manage().window().maximize();
+		String title = driver.getTitle();
+		System.out.println(title);
+		String URL = driver.getCurrentUrl();
+		System.out.println(URL);
+	}
+	
+	@Test
+	public void ChromeTest8() {
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://practicetestautomation.com/practice-test-login/");
+		driver.manage().window().maximize();
+		String title = driver.getTitle();
+		System.out.println(title);
+		String URL = driver.getCurrentUrl();
+		System.out.println(URL);
+	}
+	
+	@Test
+	public void ChromeTest9() {
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://www.demoblaze.com/index.html");
+		driver.manage().window().maximize();
+		String title = driver.getTitle();
+		System.out.println(title);
+		String URL = driver.getCurrentUrl();
+		System.out.println(URL);
+	}
+	
+	
+}
