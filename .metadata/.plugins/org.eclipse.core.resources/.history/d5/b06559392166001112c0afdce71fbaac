@@ -1,0 +1,27 @@
+package com.ApachePOI;
+
+import java.io.File;
+import java.io.FileInputStream;
+
+public class ApachePOITesting {
+	
+	public static void main(String[] args) {
+
+		File src = new File("D:\\ApacheTestData\\Workbook1.xlsx\\");
+		FileInputStream fis = new FileInputStream(src);
+		
+		XSSFWorkbook wb = new XSSFWorkbook(fis);
+		XSSFheet sheet1 = wb.getSheetAt(0);
+		
+		String data0 = sheet1.getRow(0).getCell(0).getStringCellValue();
+		System.out.println("Data form Excel is ...." + data0);
+		
+		String data1 = sheet1.getRow(0).getCell(1).getStringCellValue();
+		System.out.println("Data form Excel is ...." + data1);
+		
+		wb.close();
+	}
+	
+	
+	
+}

@@ -1,0 +1,66 @@
+package com.LocatorCasestudy;
+
+import java.io.File;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.testng.Assert;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+public class CaseStudy13 {
+
+	WebDriver driver;
+
+	String str1 = "MyAccount";
+	String str2 = "My Booking";
+
+	@BeforeTest
+	public void setUp() {
+		driver = new ChromeDriver();
+		driver.get("https://www.easemytrip.com/");
+		driver.manage().window().maximize();
+
+	}
+
+	@Test
+	public void hardAssertionTest() throws Exception {
+
+		Assert.assertEquals(str1, "MyAccount");
+		System.out.println("assertEquals Passed");
+
+		Assert.assertNotEquals(str1, str2);
+		System.out.println("assertNotEquals Passes");
+
+		Assert.assertTrue(str1.equals("MyAccount"));
+		System.out.println("assertTrue Passed");
+
+		Assert.assertFalse(str1.equals(str2));
+		System.out.println("assertFalse Passed");
+
+		String v1 = null;
+		Assert.assertNotNull(v1);
+		System.out.println("assertNotNull Passed");
+
+		String v2 = null;
+		Assert.assertNotNull(v2);
+		System.out.println("assertNotNull Passed");
+
+	}
+
+	@AfterTest
+	public void tearDown() {
+		driver.quit();
+	}
+
+}

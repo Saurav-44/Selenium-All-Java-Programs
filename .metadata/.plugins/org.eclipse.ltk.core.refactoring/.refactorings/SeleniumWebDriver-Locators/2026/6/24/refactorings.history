@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;TestNGMethods.java&apos; to &apos;SeleniumWebDriver-Locators/src/com.LocatorsTestDemo&apos;&#x0D;&#x0A;- Original project: &apos;SeleniumWebDriver-Locators&apos;&#x0D;&#x0A;- Destination element: &apos;SeleniumWebDriver-Locators/src/com.LocatorsTestDemo&apos;&#x0D;&#x0A;- Original element: &apos;TestNGMethods.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move file" destination="/src&lt;com.LocatorsTestDemo" element1="TestNGMethods.java" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1780985817743" units="0" version="1.0"/>
+</session>

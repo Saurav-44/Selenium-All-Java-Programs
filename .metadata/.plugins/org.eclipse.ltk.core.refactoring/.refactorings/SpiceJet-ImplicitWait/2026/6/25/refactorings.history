@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;SpiceJet-ImplicitWait/ScreenShots&apos; to &apos;Screenshots&apos;" description="Rename resource &apos;ScreenShots&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="ScreenShots" name="Screenshots" stamp="1781796495416" updateReferences="true"/>
+</session>

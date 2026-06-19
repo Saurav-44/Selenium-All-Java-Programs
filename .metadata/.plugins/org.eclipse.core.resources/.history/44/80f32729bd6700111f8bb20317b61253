@@ -1,0 +1,66 @@
+package com.LocatorCasestudy;
+
+import java.io.File;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+public class CaseStudy12 {
+	
+	WebDriver driver;
+
+	@BeforeTest
+	public void setUp() {
+		driver = new ChromeDriver();
+		driver.get("https://www.easemytrip.com/");
+		driver.manage().window().maximize();
+
+	}
+
+	@Test
+	public void bookingMouseHoverTest() throws Exception {
+
+		WebElement myAccount = driver.findElement(By.xpath("//span[normalize-space()='Login or Signup']"));
+
+		Actions act = new Actions(driver);
+		act.moveToElement(myAccount).perform();
+
+		Thread.sleep(5000);
+
+		driver.findElement(By.cssSelector("a[class='_btnclick'] span")).click();
+		Thread.sleep(5000);
+
+		File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		FileUtils.copyFile(src, new File("./ScreenShots/EaseMyTrip_" + getCurrentDateTime() + ".png"));
+		
+		driver.findElement(By.id("txtEmailNew")).sendKeys("saurav@44");
+		driver.findElement(By.id("shwotp")).click();
+		
+		Thread.sleep(5000);
+		
+	}
+
+	public static String getCurrentDateTime() {
+
+		DateFormat customFormat = new SimpleDateFormat("MM_dd_yyyy_HH_mm_ss");
+		Date currDate = new Date();
+		return customFormat.format(currDate);
+	}
+
+	@AfterTest
+	public void tearDown() {
+		driver.quit();
+	}
+}

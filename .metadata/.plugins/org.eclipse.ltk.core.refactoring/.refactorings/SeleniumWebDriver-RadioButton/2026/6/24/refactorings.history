@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.RadioButton.RadioButtonDemo&apos; to &apos;RadioButtonTest&apos;&#x0D;&#x0A;- Original project: &apos;SeleniumWebDriver-RadioButton&apos;&#x0D;&#x0A;- Original element: &apos;com.RadioButton.RadioButtonDemo&apos;&#x0D;&#x0A;- Renamed element: &apos;com.RadioButton.RadioButtonTest&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;RadioButtonDemo&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.RadioButton{RadioButtonDemo.java[RadioButtonDemo" matchStrategy="1" name="RadioButtonTest" qualified="false" references="true" similarDeclarations="false" stamp="1781103298234" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;DropDownTest&apos; to &apos;DropDownBoxTest&apos;&#x0D;&#x0A;- Original element: &apos;DropDownTest&apos;&#x0D;&#x0A;- Renamed element: &apos;DropDownTest&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename Java project &apos;DropDownTest&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=DropDownTest" name="DropDownBoxTest" references="true" stamp="1781439100377" version="1.0"/>
+</session>

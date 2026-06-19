@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.TestNg.TestNG&apos; to &apos;TestNGTesting&apos;&#x0D;&#x0A;- Original project: &apos;EasyCalTestNG&apos;&#x0D;&#x0A;- Original element: &apos;com.TestNg.TestNG&apos;&#x0D;&#x0A;- Renamed element: &apos;com.TestNg.TestNGTesting&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;TestNG&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/&lt;com.TestNg{TestNG.java[TestNG" matchStrategy="1" name="TestNGTesting" qualified="false" references="true" similarDeclarations="false" stamp="1781332776061" textual="false" version="1.0"/>
+</session>

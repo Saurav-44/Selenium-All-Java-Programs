@@ -1,0 +1,19 @@
+package com.Framework.TestCases;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.Test;
+
+
+import com.Framework.Pages.LoginPage;
+import com.Utility.BrowserFactory;
+
+public class ExecuteLoginPage {
+	@Test
+	public void validateUserExecution() {
+		WebDriver driver = BrowserFactory.BrowserOptions("chrome", "https://www.login.hiox.com/login?referrer=easycalculation.com");
+		
+		LoginPage loginPageEasyCal = PageFactory.initElements(driver, LoginPage.class);
+		loginPageEasyCal.login_EasyCal("saurav@345", "7865497789");
+	}
+}

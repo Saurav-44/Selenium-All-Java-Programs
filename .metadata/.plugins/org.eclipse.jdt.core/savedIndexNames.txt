@@ -12,7 +12,6 @@ INDEX VERSION 1.134+D:\Selenium Java Program\.metadata\.plugins\org.eclipse.jdt.
 1439625422.index
 16861594.index
 970799148.index
-2650216534.index
 1178712121.index
 2487351281.index
 4119390327.index
