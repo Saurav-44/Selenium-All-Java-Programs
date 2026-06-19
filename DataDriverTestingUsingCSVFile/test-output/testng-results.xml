@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-06-11T11:12:49 IST" name="Default suite" finished-at="2026-06-11T11:13:17 IST" duration-ms="28466">
+    <groups>
+    </groups>
+    <test started-at="2026-06-11T11:12:49 IST" name="Default test" finished-at="2026-06-11T11:13:17 IST" duration-ms="28466">
+      <class name="com.DataDriverTestingCSVFile.DataDriverTestingCSV">
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:com.DataDriverTestingCSVFile.DataDriverTestingCSV@3857f613]" started-at="2026-06-11T11:12:49 IST" name="SetUp" finished-at="2026-06-11T11:12:55 IST" duration-ms="6009" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="CSVFile()[pri:0, instance:com.DataDriverTestingCSVFile.DataDriverTestingCSV@3857f613]" started-at="2026-06-11T11:12:55 IST" name="CSVFile" finished-at="2026-06-11T11:13:12 IST" duration-ms="17204" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CSVFile -->
+        <test-method is-config="true" signature="endTest()[pri:0, instance:com.DataDriverTestingCSVFile.DataDriverTestingCSV@3857f613]" started-at="2026-06-11T11:13:12 IST" name="endTest" finished-at="2026-06-11T11:13:17 IST" duration-ms="5140" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- com.DataDriverTestingCSVFile.DataDriverTestingCSV -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

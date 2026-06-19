@@ -1,0 +1,29 @@
+package com.ImplicitWaitTesting;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class ImplicitWait {
+
+	public static void main(String[] args) {
+		
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.get("https://www.easemytrip.com/");
+		driver.findElement(By.xpath("//input[@id='FromSector_show']")).sendKeys("Delhi", Keys.ENTER);
+		driver.findElement(By.xpath("//input[@id='Editbox13_show']")).sendKeys("Mumbai", Keys.ENTER);
+		driver.findElement(By.xpath("//li[@id='frth_3_24/06/2026']")).click();
+		driver.findElement(By.xpath("//li[@id='frth_4_25/06/2026']")).click();
+		driver.findElement(By.className("//input[@class='srchBtnSe']")).click();
+		
+		
+
+	}
+
+}

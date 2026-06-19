@@ -1,0 +1,30 @@
+package com.LocatorsTestDemo;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+public class IDTestDemoExamples {
+	
+	@Test
+	public void IDLocator() throws InterruptedException {
+		WebDriver driver = new ChromeDriver();
+		driver.navigate().to("https://parabank.parasoft.com/parabank/index.htm");
+		driver.manage().window().maximize();
+		String title = driver.getTitle();
+		System.out.println(title);
+		// using Locator ID
+		driver.findElement(By.xpath("//input[@name='username']")).sendKeys("student");
+		driver.findElement(By.xpath("//input[@name='password']")).sendKeys("Password123");
+		driver.findElement(By.xpath("//input[@value='Log In']")).click();
+		
+		Thread.sleep(3000);
+		
+			
+	}
+	
+	
+
+	
+}

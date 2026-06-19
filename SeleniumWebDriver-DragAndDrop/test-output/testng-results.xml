@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-06-11T09:48:13 IST" name="Default suite" finished-at="2026-06-11T09:48:18 IST" duration-ms="5433">
+    <groups>
+    </groups>
+    <test started-at="2026-06-11T09:48:13 IST" name="Default test" finished-at="2026-06-11T09:48:18 IST" duration-ms="5433">
+      <class name="com.DragAndDrop.DragAndDropTest">
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:com.DragAndDrop.DragAndDropTest@2a8448fa]" started-at="2026-06-11T09:48:13 IST" name="SetUp" finished-at="2026-06-11T09:48:17 IST" duration-ms="4193" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="dragAndDrop()[pri:0, instance:com.DragAndDrop.DragAndDropTest@2a8448fa]" started-at="2026-06-11T09:48:17 IST" name="dragAndDrop" finished-at="2026-06-11T09:48:18 IST" duration-ms="614" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dragAndDrop -->
+        <test-method is-config="true" signature="endTest()[pri:0, instance:com.DragAndDrop.DragAndDropTest@2a8448fa]" started-at="2026-06-11T09:48:18 IST" name="endTest" finished-at="2026-06-11T09:48:18 IST" duration-ms="535" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- com.DragAndDrop.DragAndDropTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

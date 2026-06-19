@@ -1,0 +1,112 @@
+package com.SpiceJet.ImplicitWait;
+
+import java.io.File;
+import java.time.Duration;
+import java.time.LocalDate;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+
+public class SpiceJetBookingTest {
+
+
+	WebDriver driver;
+
+	@Parameters("browser")
+	@BeforeTest
+	public void setup(String browser) {
+
+		if (browser.equalsIgnoreCase("chrome")) {
+			driver = new ChromeDriver();
+		} else if (browser.equalsIgnoreCase("edge")) {
+			driver = new EdgeDriver();
+		}
+		driver.manage().window().maximize();
+
+
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+
+		
+		driver.get("https://www.spicejet.com/");
+}
+
+		@Test
+		public void flightBookingTest() throws Exception {
+
+			// FROM CITY
+			driver.findElement(By.xpath("//div[text()='From']")).click();
+			driver.findElement(By.xpath("//input[@type='text']")).sendKeys("Hyderabad");
+			driver.findElement(By.xpath("//div[contains(text(),'Hyderabad')]")).click();
+
+			// TO CITY
+			driver.findElement(By.xpath("//div[text()='To']")).click();
+			driver.findElement(By.xpath("(//input[@type='text'])[2]")).sendKeys("Delhi");
+			driver.findElement(By.xpath("//div[contains(text(),'Delhi')]")).click();
+			
+			// DATE - 5 days from current date
+			LocalDate futureDate = LocalDate.now().plusDays(5);
+			String day = String.valueOf(futureDate.getDayOfMonth());
+
+			driver.findElement(By.xpath("//div[@data-testid='departure-date-dropdown-label-test-id']")).click();
+
+			driver.findElement(By.xpath("//div[text()='" + day + "']")).click();
+
+			// PASSENGERS
+			driver.findElement(By.xpath("//div[text()='Passengers']")).click();
+
+			for (int i = 1; i < 5; i++) {
+				driver.findElement(By.xpath("//div[@data-testid='Adult-testID-plus-one-cta']")).click();
+				}
+
+			driver.findElement(By.xpath("//div[text()='Done']")).click();
+			// SEARCH FLIGHT
+			driver.findElement(By.xpath("//div[text()='Search Flight']")).click();
+
+			Thread.sleep(5000);
+
+			// SELECT BEST PRICE FLIGHT
+			driver.findElement(By.xpath("(//div[contains(@class,'flight-card')])[1]")).click();
+driver.findElement(By.xpath("//div[text()='Continue']")).click();
+	
+			// CONTACT DETAILS
+			driver.findElement(By.xpath("//input[@placeholder='Mobile Number']")).sendKeys("9876543210");
+
+			driver.findElement(By.xpath("//input[@placeholder='Email']")).sendKeys("test@gmail.com");
+
+			// PASSENGER DETAILS
+			driver.findElement(By.xpath("//input[@placeholder='First Name']"))
+			.sendKeys("Saurav");
+
+			driver.findElement(By.xpath("//input[@placeholder='Last Name']")).sendKeys("Singh");
+
+			// SCREENSHOT
+			TakesScreenshot ts = (TakesScreenshot) driver;
+
+			File src = ts.getScreenshotAs(OutputType.FILE);
+
+			FileUtils.copyFile(src,new File("./Screenshots/SpiceJetBooking.png"));
+
+			System.out.println("Screenshot Captured Successfully");
+
+			// CONTINUE	
+				driver.findElement(By.xpath("//div[text()='Continue']")).click();
+
+				Thread.sleep(3000);
+}
+
+			@AfterTest
+			public void tearDown() {
+				if (driver != null) {
+					driver.quit();
+				}
+			}
+}

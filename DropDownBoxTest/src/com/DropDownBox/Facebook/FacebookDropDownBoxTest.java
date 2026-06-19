@@ -1,0 +1,27 @@
+package com.DropDownBox.Facebook;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.BeforeTest;
+
+public class FacebookDropDownBoxTest {
+	
+	WebDriver driver;
+	String url = "https://www.facebook.com/campaign/landing.php?";
+	
+	@BeforeTest
+	public void setUp() {
+		driver = new ChromeDriver();
+		driver.navigate().to(url);
+		driver.manage().window().maximize();
+	}
+	
+	public void dropDownBoxTest() {
+		
+		//Date Dropdown - SelectByIndex
+		
+		
+	}
+	
+}

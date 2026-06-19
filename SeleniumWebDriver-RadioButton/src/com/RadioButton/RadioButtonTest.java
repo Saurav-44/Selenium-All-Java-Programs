@@ -1,0 +1,43 @@
+package com.RadioButton;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+public class RadioButtonTest {
+
+	// Count number of radio buttons and print using TestNG
+
+	WebDriver driver;
+
+	String url = "https://www.spicejet.com/";
+
+	@BeforeTest
+	public void setUp() {
+
+		driver = new ChromeDriver();
+		driver.navigate().to(url);
+		driver.manage().window().maximize();
+	}
+
+	@Test
+	public void countAllRadioButtons() throws Exception {
+
+		List<WebElement> countAllRadios = driver.findElements(By.cssSelector(".css-1dbjc4n.r-7o8qx1"));
+		System.out.println("Number of Radio: " + countAllRadios.size());
+		
+	
+
+	}
+
+	@AfterTest
+	public void tearDown() {
+		driver.quit();
+	}
+}

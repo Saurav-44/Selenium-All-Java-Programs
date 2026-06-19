@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="0" failed="0" skipped="3">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-06-19T00:15:13 IST" name="Suite" finished-at="2026-06-19T00:15:16 IST" duration-ms="2351">
+    <groups>
+    </groups>
+    <test started-at="2026-06-19T00:15:13 IST" name="EdgeBrowser" finished-at="2026-06-19T00:15:15 IST" duration-ms="1493">
+      <class name="com.SpiceJet.ImplicitWait.SpiceJetBookingTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.SpiceJet.ImplicitWait.SpiceJetBookingTest@4b2c5e02]" started-at="2026-06-19T00:15:13 IST" name="setup" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1781808313843" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by BeforeTest on method setup but has not been marked @Optional or defined
+in D:\Selenium Java Program\SpiceJet-ImplicitWait\testng.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeTest on method setup but has not been marked @Optional or defined
+in D:\Selenium Java Program\SpiceJet-ImplicitWait\testng.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:264)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
+at org.testng.TestRunner.beforeRun(TestRunner.java:646)
+at org.testng.TestRunner.run(TestRunner.java:612)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="flightBookingTest()[pri:0, instance:com.SpiceJet.ImplicitWait.SpiceJetBookingTest@4b2c5e02]" started-at="2026-06-19T00:15:15 IST" name="flightBookingTest" finished-at="2026-06-19T00:15:15 IST" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by BeforeTest on method setup but has not been marked @Optional or defined
+in D:\Selenium Java Program\SpiceJet-ImplicitWait\testng.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeTest on method setup but has not been marked @Optional or defined
+in D:\Selenium Java Program\SpiceJet-ImplicitWait\testng.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:264)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
+at org.testng.TestRunner.beforeRun(TestRunner.java:646)
+at org.testng.TestRunner.run(TestRunner.java:612)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightBookingTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.SpiceJet.ImplicitWait.SpiceJetBookingTest@4b2c5e02]" started-at="2026-06-19T00:15:15 IST" name="tearDown" finished-at="2026-06-19T00:15:15 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.SpiceJet.ImplicitWait.SpiceJetBookingTest -->
+    </test> <!-- EdgeBrowser -->
+    <test started-at="2026-06-19T00:15:13 IST" name="ChromeBrowser" finished-at="2026-06-19T00:15:16 IST" duration-ms="2351">
+      <class name="com.SpiceJet.ImplicitWait.SpiceJetBookingTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.SpiceJet.ImplicitWait.SpiceJetBookingTest@4e0ae11f]" started-at="2026-06-19T00:15:13 IST" name="setup" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1781808313843" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by BeforeTest on method setup but has not been marked @Optional or defined
+in D:\Selenium Java Program\SpiceJet-ImplicitWait\testng.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeTest on method setup but has not been marked @Optional or defined
+in D:\Selenium Java Program\SpiceJet-ImplicitWait\testng.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:264)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
+at org.testng.TestRunner.beforeRun(TestRunner.java:646)
+at org.testng.TestRunner.run(TestRunner.java:612)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="flightBookingTest()[pri:0, instance:com.SpiceJet.ImplicitWait.SpiceJetBookingTest@4e0ae11f]" started-at="2026-06-19T00:15:16 IST" name="flightBookingTest" finished-at="2026-06-19T00:15:16 IST" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by BeforeTest on method setup but has not been marked @Optional or defined
+in D:\Selenium Java Program\SpiceJet-ImplicitWait\testng.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeTest on method setup but has not been marked @Optional or defined
+in D:\Selenium Java Program\SpiceJet-ImplicitWait\testng.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:264)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
+at org.testng.TestRunner.beforeRun(TestRunner.java:646)
+at org.testng.TestRunner.run(TestRunner.java:612)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightBookingTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.SpiceJet.ImplicitWait.SpiceJetBookingTest@4e0ae11f]" started-at="2026-06-19T00:15:16 IST" name="tearDown" finished-at="2026-06-19T00:15:16 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.SpiceJet.ImplicitWait.SpiceJetBookingTest -->
+    </test> <!-- ChromeBrowser -->
+    <test started-at="2026-06-19T00:15:13 IST" name="Test" finished-at="2026-06-19T00:15:16 IST" duration-ms="2346">
+      <class name="com.SpiceJet.ImplicitWait.SpiceJetBookingTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.SpiceJet.ImplicitWait.SpiceJetBookingTest@75c56eb9]" started-at="2026-06-19T00:15:13 IST" name="setup" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1781808313843" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by BeforeTest on method setup but has not been marked @Optional or defined
+in D:\Selenium Java Program\SpiceJet-ImplicitWait\testng.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeTest on method setup but has not been marked @Optional or defined
+in D:\Selenium Java Program\SpiceJet-ImplicitWait\testng.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:264)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
+at org.testng.TestRunner.beforeRun(TestRunner.java:646)
+at org.testng.TestRunner.run(TestRunner.java:612)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="flightBookingTest()[pri:0, instance:com.SpiceJet.ImplicitWait.SpiceJetBookingTest@75c56eb9]" started-at="2026-06-19T00:15:16 IST" name="flightBookingTest" finished-at="2026-06-19T00:15:16 IST" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by BeforeTest on method setup but has not been marked @Optional or defined
+in D:\Selenium Java Program\SpiceJet-ImplicitWait\testng.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeTest on method setup but has not been marked @Optional or defined
+in D:\Selenium Java Program\SpiceJet-ImplicitWait\testng.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:264)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
+at org.testng.TestRunner.beforeRun(TestRunner.java:646)
+at org.testng.TestRunner.run(TestRunner.java:612)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightBookingTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.SpiceJet.ImplicitWait.SpiceJetBookingTest@75c56eb9]" started-at="2026-06-19T00:15:16 IST" name="tearDown" finished-at="2026-06-19T00:15:16 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.SpiceJet.ImplicitWait.SpiceJetBookingTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

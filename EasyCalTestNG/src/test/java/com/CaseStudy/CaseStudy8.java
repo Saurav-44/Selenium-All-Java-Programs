@@ -1,0 +1,56 @@
+package com.CaseStudy;
+
+import java.io.File;
+
+import org.apache.maven.shared.utils.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+
+public class CaseStudy8 {
+	
+	WebDriver driver;
+	String url = "https://demo.opencart.com/";
+
+	@Parameters("browserName")
+	@BeforeTest
+	public void setUp(String browserName) {
+		if (browserName.equalsIgnoreCase("chrome")) {
+			driver = new ChromeDriver();
+		}
+		else
+		{
+			System.out.println("Launching failed");
+		}
+	}
+
+	@Test
+	public void BrowserTest() throws Exception {
+
+		driver.get(url);
+		driver.manage().window().maximize();
+		Thread.sleep(6000);
+		
+		String title = driver.getTitle();
+		System.out.println("Page Title: " + title);
+		
+		File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		FileUtils.copyFile(src, new File("./ScreenShots/HomePage.png"));
+		
+		System.out.println("Screenshot Captured Successfully");
+		Thread.sleep(3000);
+	}
+
+	@AfterTest
+	public void tearDown() {
+		driver.quit();
+	}
+	
+}
