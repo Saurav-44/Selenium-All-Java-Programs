@@ -2,6 +2,9 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="D:\Selenium Java Program\HollandAndBarrettLoginRewardsTest\src\test\java\com\hollandandbarrett\LoginReward\RewardLoginTest.java"/>
+			<item value="D:\Selenium Java Program\POMTestNGCaseStudy\src\test\java\com\webkul\TestCases\ExecuteLoginPageWebkul.java"/>
+			<item value="D:\Selenium Java Program\HollandAndBarrett-TestNG-DataProvider\src\test\java\com\hollandandbarrett\tests\DataProviderTestNGTest.java"/>
 			<item value="D:\Selenium Java Program\DataProviderTestNG"/>
 			<item value="D:\Selenium Java Program\HybridDrivenFramework\src\test\java\com\Utility\ExcelDataProvider.java"/>
 			<item value="D:\Selenium Java Program\PageObjectModelEasyCalculation\src\test\java\com\EasyCalculation\TestCases\ExecuteLoginPage.java"/>
@@ -47,6 +50,11 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="ParametrizationPOI"/>
+			<item value="HollandAndBarrettLoginRewardsTest"/>
+			<item value="POMTestNGCaseStudy"/>
+			<item value="AssertionTest"/>
+			<item value="HollandAndBarrett-TestNG-DataProvider"/>
 			<item value="SpiceJet-ImplicitWait"/>
 			<item value="Cucumber1stExample"/>
 			<item value="Cucumber Automation"/>
@@ -55,6 +63,11 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="ParametrizationPOI"/>
+			<item value="HollandAndBarrettLoginRewardsTest"/>
+			<item value="POMTestNGCaseStudy"/>
+			<item value="AssertionTest"/>
+			<item value="HollandAndBarrett-TestNG-DataProvider"/>
 			<item value="SpiceJet-ImplicitWait"/>
 			<item value="Cucumber1stExample"/>
 			<item value="Cucumber Automation"/>
